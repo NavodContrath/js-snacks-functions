@@ -7,25 +7,30 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 const date = new Date()
+console.log(date);
+
+
 
 // Dichiara la funzione qui.
 function greetings() {
-    if (date <= date.getHours(13)) {
+    if (date.getHours() < 13) {
         console.log(`Buongiorno ${name}`);
-    } else if (date > date.getHours(13) && date < date.getHours(17)) {
-        console.log(`Buon pomeriggio ${name}`);
-    } else {
+    } else if (date.getHours() > 17) {
         console.log(`Buonasera ${name}`);
+    } else {
+        console.log(`Buon pomeriggio ${name}`);
+
     }
 }
 /* 
 const greetings =()=>{
-     if (date <= date.getHours(13)) {
+     if (date.getHours() < 13) {
         console.log(`Buongiorno ${name}`);
-    } else if (date > date.getHours(13) && date < date.getHours(17)) {
-        console.log(`Buon pomeriggio ${name}`);
-    } else {
+    } else if (date.getHours() > 17) {
         console.log(`Buonasera ${name}`);
+    } else {
+        console.log(`Buon pomeriggio ${name}`);
+
     }
 }
 */
