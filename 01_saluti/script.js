@@ -4,10 +4,12 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-function greetings(name) {
+//normalf/ function
+/* function greetings(name) {
     console.log(`Greetings ${name}`);
-}
-
+} */
+//arrow function
+const greetings = name => console.log(`Greetings ${name}`)
 // Invoca la funzione qui e stampa il risultato in console
 greetings(userName)
 
