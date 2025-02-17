@@ -4,15 +4,22 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 const empty_name = []
 
 // Dichiara la funzione qui.
-function firstLetter() {
-    for (let i = 0; i < names.length; i++) {
-        const thisName = names[i]
+/* function firstLetter(name) {
+    for (let i = 0; i < name.length; i++) {
+        const thisName = name[i]
         empty_name.push(thisName.charAt(0))
     }
-}
+} */
 
+const firstLetter = name => {
+    for (let i = 0; i < name.length; i++) {
+        const thisName = name[i]
+        empty_name.push(thisName.charAt(0))
+    }
+
+}
 // Invoca la funzione qui e stampa il risultato in console
-firstLetter()
+firstLetter(names)
 console.log(empty_name);
 
 
