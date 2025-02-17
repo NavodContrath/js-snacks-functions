@@ -4,7 +4,16 @@ const word = 'javascript';
 let wordsVowels = 0
 
 // Dichiara la funzione qui.
-function countVowels() {
+/* function countVowels() {
+    for (let i = 0; i < word.length; i++) {
+        const thisLetter = word[i]
+        if ((thisLetter == "a") || (thisLetter == "i") || (thisLetter == "e") || (thisLetter == "o") || (thisLetter == "u")) {
+            wordsVowels += 1
+        }
+    }
+    return wordsVowels
+} */
+const countVowels = () => {
     for (let i = 0; i < word.length; i++) {
         const thisLetter = word[i]
         if ((thisLetter == "a") || (thisLetter == "i") || (thisLetter == "e") || (thisLetter == "o") || (thisLetter == "u")) {
