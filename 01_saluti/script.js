@@ -4,7 +4,7 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-//normalf/ function
+//normal function
 /* function greetings(name) {
     console.log(`Greetings ${name}`);
 } */

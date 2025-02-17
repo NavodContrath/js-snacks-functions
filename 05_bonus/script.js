@@ -8,9 +8,6 @@ e buonasera se è sera (oltre le 17)
 const name = 'Mario';
 const date = new Date()
 console.log(date);
-
-
-
 // Dichiara la funzione qui.
 function greetings() {
     if (date.getHours() < 13) {
