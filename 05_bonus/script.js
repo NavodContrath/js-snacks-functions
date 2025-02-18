@@ -9,30 +9,30 @@ const name = 'Mario';
 const date = new Date()
 console.log(date);
 // Dichiara la funzione qui.
-function greetings() {
+function greetings(string) {
     if (date.getHours() < 13) {
-        console.log(`Buongiorno ${name}`);
+        console.log(`Buongiorno ${string}`);
     } else if (date.getHours() > 17) {
-        console.log(`Buonasera ${name}`);
+        console.log(`Buonasera ${string}`);
     } else {
-        console.log(`Buon pomeriggio ${name}`);
+        console.log(`Buon pomeriggio ${string}`);
 
     }
 }
 /* 
-const greetings =()=>{
+const greetings =(string)=>{
      if (date.getHours() < 13) {
-        console.log(`Buongiorno ${name}`);
+        console.log(`Buongiorno ${string}`);
     } else if (date.getHours() > 17) {
-        console.log(`Buonasera ${name}`);
+        console.log(`Buonasera ${string}`);
     } else {
-        console.log(`Buon pomeriggio ${name}`);
+        console.log(`Buon pomeriggio ${string}`);
 
     }
 }
 */
 // Invoca la funzione qui e stampa il risultato in console
-greetings()
+greetings(name)
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
