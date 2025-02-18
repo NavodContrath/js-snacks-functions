@@ -13,9 +13,9 @@ let wordsVowels = 0
     }
     return wordsVowels
 } */
-const countVowels = () => {
-    for (let i = 0; i < word.length; i++) {
-        const thisLetter = word[i]
+const countVowels = (string) => {
+    for (let i = 0; i < string.length; i++) {
+        const thisLetter = string[i]
         if ((thisLetter == "a") || (thisLetter == "i") || (thisLetter == "e") || (thisLetter == "o") || (thisLetter == "u")) {
             wordsVowels += 1
         }
@@ -24,7 +24,7 @@ const countVowels = () => {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-countVowels()
+countVowels(word)
 console.log(wordsVowels);
 
 

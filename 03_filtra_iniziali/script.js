@@ -13,16 +13,16 @@ const emptyNames = []
     }
 }
 */
-const filterByFirstletter = () => {
-    for (let i = 0; i < names.length; i++) {
-        thisName = names[i]
+const filterByFirstletter = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        thisName = arr[i]
         if (thisName.charAt(0) == "A") {
             emptyNames.push(thisName)
         }
     }
 }
 // Invoca la funzione qui e stampa il risultato in console
-filterByFirstletter()
+filterByFirstletter(names)
 console.log(emptyNames);
 
 
